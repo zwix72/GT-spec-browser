@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GT: Browser Spec</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+      
+      body {
+        margin: 0;
+        background-color: #111;
+        color: #fff;
+        font-family: 'Exo 2', sans-serif;
+        overflow: hidden;
+        user-select: none;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #000; }
+      ::-webkit-scrollbar-thumb { background: #444; border-radius: 3px; }
+      ::-webkit-scrollbar-thumb:hover { background: #fff; }
+
+      .glass-panel {
+        background: rgba(10, 10, 15, 0.85);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "three": "https://esm.sh/three@0.160.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@8.15.14?deps=three@0.160.0,react@18.2.0",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@9.99.0?deps=three@0.160.0,react@18.2.0,@react-three/fiber@8.15.14",
+    "@react-three/cannon": "https://esm.sh/@react-three/cannon@6.6.0?deps=three@0.160.0,react@18.2.0,@react-three/fiber@8.15.14",
+    "cannon-es": "https://esm.sh/cannon-es@0.20.0",
+    "zustand": "https://esm.sh/zustand@4.5.0",
+    "zustand/middleware": "https://esm.sh/zustand@4.5.0/middleware",
+    "lucide-react": "https://esm.sh/lucide-react@0.300.0?deps=react@18.2.0",
+    "uuid": "https://esm.sh/uuid@9.0.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "zustand/": "https://esm.sh/zustand@^5.0.9/"
+  }
+}
+</script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
